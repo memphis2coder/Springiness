@@ -1,0 +1,40 @@
+.blog img {
+  height: 100%;
+}
+
+._card-title {
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.1rem;
+}
+
+._card-text {
+  font-family: "Open Sans", sans-serif;
+}
+
+.inner {
+  overflow: hidden;
+}
+
+.inner img {
+  transition: all 1.5s ease;
+  -webkit-transition: all 1.5s ease;
+  -moz-transition: all 1.5s ease;
+  -ms-transition: all 1.5s ease;
+  -o-transition: all 1.5s ease;
+}
+
+.inner:hover img {
+  transform: scale(1.5);
+  -webkit-transition: scale(1.5);
+  -moz-transition: scale(1.5);
+  -ms-transition: scale(1.5);
+  -o-transition: scale(1.5);
+  -webkit-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  -o-transform: scale(1.5);
+}
+
+._btn-card {
+  font-family: "Roboto", sans-serif;
+}

@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Google fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <!-- BootStrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <!-- Animate CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+    />
+    <!-- Aos CDN-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Lightbox -->
+    <link rel="stylesheet" href="./css/lightbox.css" />
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Springiness</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light animated fadeInLeft">
+        <div class="container">
+          <a class="navbar-brand" href="#">Springy</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            onclick="overlay()"
+          >
+            <span> </span>
+            <span> </span>
+            <span> </span>
+            <!-- <span class="navbar-toggler-icon"></span> -->
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#gallery">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#blog">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#weather">Weather</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="main">
+      <!-- Jumbotron -->
+      <section id="title">
+        <div class="container">
+          <div class="jumbotron">
+            <div class="title animated slideInUp">
+              <h1>Hi! my name is Antonio</h1>
+              <h1>a front end developer</h1>
+            </div>
+            <hr id="line" class="mt-4 line grow" />
+          </div>
+        </div>
+      </section>
+      <!--X- Jumbotron -X-->
+
+      <!-- Introduction -->
+      <section id="introduction">
+        <div class="container">
+          <div class="introduction-content pb-5">
+            <div class="row text-center">
+              <div class="col-sm my-auto">
+                <h2 class="section-title animated fadeInRight">Introduction</h2>
+                <p class="py-3 animated fadeInLeft">
+                  Life is either a daring adventure or nothing at all. Having
+                  fun while learning feels like playing a game.
+                </p>
+              </div>
+              <div class="col-sm">
+                <div class="introduction-img animated fadeInUp">
+                  <img src="./img/subway.jpg" class="img-fluid" alt="subway" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--X- Introduction -X-->
+
+      <!-- Platform -->
+      <section id="platform" data-aos="fade-down">
+        <div
+          class="jumbotron jumbotron-fluid platform-jumbotron d-flex align-items-center text-center"
+        >
+          <div class="container">
+            <div class="platform-content">
+              <h1 class="platform-title" data-aos="fade-up">
+                Do anything, but let it produce joy!
+              </h1>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--X- Platform -X-->
+
+      <!-- Gallery -->
+      <section id="gallery" class="py-4">
+        <div class="container">
+          <div class="gallery-content text-center">
+            <h2 class="gallery-title section-title pb-3" data-aos="fade-down">
+              Gallery
+            </h2>
+            <p class="gallery-text section-text pb-3" data-aos="fade-up">
+              Complex and sometimes multiple ideas can be conveyed by a single
+              still image.
+            </p>
+
+            <div class="row no-gutters pb-5">
+              <div class="lightbox-content col-6 col-sm-6 col-lg-4">
+                <a href="./img/inside.jpg" data-lightbox="gallery">
+                  <img
+                    src="./img/inside.jpg"
+                    class="img-fluid"
+                    alt="subway"
+                    data-aos="fade-right"
+                  />
+                </a>
+              </div>
+              <div class="lightbox-content col-6 col-sm-6 col-lg-4">
+                <a href="./img/black.jpg" data-lightbox="gallery">
+                  <img
+                    src="./img/black.jpg"
+                    class="img-fluid"
+                    alt="black"
+                    data-aos="fade-up"
+                  />
+                </a>
+              </div>
+              <div class="lightbox-content col-12 col-md-6 col-lg-4">
+                <a href="./img/bikes.jpg" data-lightbox="gallery">
+                  <img
+                    src="./img/bikes.jpg"
+                    class="img-fluid"
+                    alt="bikes"
+                    data-aos="fade-left"
+                  />
+                </a>
+              </div>
+              <div class="lightbox-content col-6 col-sm-6 col-lg-4">
+                <a href="./img/city.jpg" data-lightbox="gallery">
+                  <img
+                    src="./img/city.jpg"
+                    class="img-fluid"
+                    alt="city"
+                    data-aos="fade-right"
+                  />
+                </a>
+              </div>
+              <div class="lightbox-content col-6 col-sm-6 col-lg-4">
+                <a href="./img/nyc.jpg" data-lightbox="gallery">
+                  <img
+                    src="./img/nyc.jpg"
+                    class="img-fluid"
+                    alt="nyc"
+                    data-aos="fade-left"
+                  />
+                </a>
+              </div>
+              <div class="lightbox-content col-12 col-md-6 col-lg-4">
+                <a href="./img/night.jpg" data-lightbox="gallery">
+                  <img
+                    src="./img/night.jpg"
+                    class="img-fluid"
+                    alt="night"
+                    data-aos="fade-right"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--X- Gallery -X-->
+
+      <!-- Destiny -->
+      <section id="destiny" data-aos="fade-down">
+        <div
+          class="jumbotron jumbotron-fluid destiny-jumbotron d-flex align-items-center text-center"
+        >
+          <div class="container">
+            <div class="destiny-content">
+              <h1 class="section-title" data-aos="fade-up">
+                Destiny is not always paved smooth with gold.
+              </h1>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--X- Destiny -X-->
+
+      <!-- Blog -->
+      <section id="blog" class="text-center py-3 pb-5">
+        <div class="container">
+          <h2 class="section-title" data-aos="fade-down">
+            Blog
+          </h2>
+          <p class="section-text py-3" data-aos="fade-up">
+            Provide dynamic content to engage your audience and be interactive.
+          </p>
+          <div class="blog-content pt-3">
+            <div class="row">
+              <div class="col-12 col-md-6 col-lg-4" data-aos="fade-up">
+                <div class="card shadow">
+                  <div class="inner">
+                    <img src="./img/art.jpg" class="card-img-top" alt="art" />
+                  </div>
+
+                  <div class="card-body">
+                    <h5 class="card-title _card-title">
+                      Art
+                    </h5>
+                    <p class="card-text _card-text">
+                      Art has the power to illuminate, to educate and motivate.
+                    </p>
+                    <a href="#" class="snake">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      read more
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-6 col-lg-4">
+                <div class="card shadow my-3 my-md-0" data-aos="fade-up">
+                  <div class="inner">
+                    <img
+                      src="./img/staircase.jpg"
+                      class="card-img-top"
+                      alt="staircase"
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title _card-title ">Stairs</h5>
+                    <p class="card-text _card-text">
+                      You don't have to see the whole staircase, just the first
+                      step.
+                    </p>
+                    <a href="#" class="snake">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      read more
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-lg-4">
+                <div class="card shadow mt-md-3 mt-lg-0" data-aos="fade-up">
+                  <div class="inner">
+                    <img
+                      src="./img/union.jpg"
+                      class="card-img-top"
+                      alt="union"
+                    />
+                  </div>
+
+                  <div class="card-body">
+                    <h5 class="card-title _card-title ">Architecture</h5>
+                    <p class="card-text _card-text">
+                      Architecture should speak of its time and place, but yearn
+                      for timelessness.
+                    </p>
+                    <a href="#" class="snake">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      read more
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--X- Blog -X-->
+
+      <!-- Weather widget -->
+      <section id="weather" class="text-center py-3 pb-5">
+        <div class="container py-5">
+          <div class="weather-content">
+            <h1 class="section-title pb-3" data-aos="fade-up">
+              Weather: 5-day forecast
+            </h1>
+            <p class=" section-text pb-3" data-aos="fade-up">
+              Go outside and get some
+              <span
+                style="color:yellow;font-weight:bold;font-family: cursive;font-size: 2rem;"
+                >Sunshine</span
+              >.
+            </p>
+            <a
+              class="weatherwidget-io"
+              href="https://forecast7.com/en/38d91n77d04/washington/?unit=us"
+              data-label_1="WASHINGTON D.C."
+              data-label_2="WEATHER"
+              data-days="5"
+              data-theme="pure"
+              data-aos="fade-up"
+              >WASHINGTON D.C. WEATHER</a
+            >
+          </div>
+        </div>
+      </section>
+      <!--X- Weather widget -X-->
+    </main>
+
+    <!-- Footer -->
+    <footer class="page-footer">
+      <div
+        class="footer-copyright text-center py-3"
+        style="font-family: cursive;"
+      >
+        ©made by Antonio K
+      </div>
+    </footer>
+    <!--X- Footer -X-->
+
+    <!-- Anime CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <!-- jQuery first, then Popper.js, Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- LightBox -->
+    <script src="lightbox-plus-jquery.js"></script>
+    <!-- My JavaScript -->
+    <script src="app.js"></script>
+  </body>
+</html>

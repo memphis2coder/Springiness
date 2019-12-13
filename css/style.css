@@ -1,0 +1,38 @@
+@import "./header/header.css";
+@import "./paper-plane/paper-plane.css";
+@import "./introduction/introduction.css";
+@import "./platform/platform.css";
+@import "./destiny/destiny.css";
+@import "./blog/blog.css";
+@import "./snakeBorder/snakeBorder.css";
+
+:root {
+  --gold-color: gold;
+  --main-font: font-family: "cursive";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Lucida Sans", sans-serif;
+}
+
+.section-title {
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  letter-spacing: 0.1rem;
+}
+
+.section-text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+}

@@ -1,0 +1,104 @@
+.snake {
+  position: relative;
+  font-family: "Roboto", sans-serif;
+  display: inline-block;
+  text-decoration: none !important;
+  padding: 10px 15px;
+  color: #007bff;
+  overflow: hidden;
+  transition: 0.2s;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -ms-transition: 0.2s;
+  -o-transition: 0.2s;
+}
+
+.snake:hover {
+  color: white;
+  background: #007bff;
+  border-radius: 1rem;
+  box-shadow: 0 0 5px lightgrey, 0 0 20px lightgrey, 0 0 20px lightgrey;
+  transition-delay: 1s;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+
+.snake span {
+  position: absolute;
+  display: block;
+}
+/* top line */
+.snake span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #007bff);
+}
+
+.snake:hover span:nth-child(1) {
+  left: 100%;
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+}
+/* right line */
+.snake span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #007bff);
+}
+
+.snake:hover span:nth-child(2) {
+  top: 100%;
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+  transition-delay: 0.25s;
+}
+
+/* left line */
+.snake span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #007bff);
+}
+
+.snake:hover span:nth-child(4) {
+  bottom: 100%;
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+  transition-delay: 0.75s;
+}
+
+/* bottom line */
+.snake span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(360deg, transparent, #007bff);
+}
+
+.snake:hover span:nth-child(3) {
+  right: 100%;
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+  transition-delay: 0.5s;
+}
